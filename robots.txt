@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fit360club.vercel.app/sitemap.xml
