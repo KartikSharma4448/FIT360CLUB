@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#ff3333"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+  <!-- Dumbbell Icon -->
+  <g fill="none" stroke="url(#grad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center Bar -->
+    <line x1="20" y1="32" x2="44" y2="32" />
+    <!-- Left Inner Weight -->
+    <line x1="20" y1="23" x2="20" y2="41" />
+    <!-- Left Outer Weight -->
+    <line x1="13" y1="26" x2="13" y2="38" />
+    <!-- Left Connector -->
+    <line x1="13" y1="32" x2="20" y2="32" />
+    <!-- Right Inner Weight -->
+    <line x1="44" y1="23" x2="44" y2="41" />
+    <!-- Right Outer Weight -->
+    <line x1="51" y1="26" x2="51" y2="38" />
+    <!-- Right Connector -->
+    <line x1="44" y1="32" x2="51" y2="32" />
+  </g>
+</svg>
