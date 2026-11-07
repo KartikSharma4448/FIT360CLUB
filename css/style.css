@@ -142,3 +142,14 @@ html {
 #mobile-menu.open .mobile-link:nth-child(6) { transition-delay: 0.30s; }
 #mobile-menu.open .mobile-link:nth-child(7) { transition-delay: 0.35s; }
 #mobile-menu.open .mobile-link:nth-child(8) { transition-delay: 0.40s; }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
