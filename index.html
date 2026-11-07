@@ -534,81 +534,107 @@
     </section>
 
     <!-- Contact & Location Section -->
-    <section id="contact" class="py-16 md:py-24 bg-brand-black w-full overflow-hidden">
+    <section id="contact" class="py-12 md:py-24 bg-brand-black w-full overflow-hidden">
         <div class="container mx-auto px-4 md:px-8 max-w-7xl">
-            <div class="mb-12 md:mb-16 text-center reveal-up">
-                <span class="text-brand-red font-poppins font-semibold uppercase tracking-widest text-sm md:text-base mb-4 block">Get in touch</span>
+            <div class="mb-8 sm:mb-12 md:mb-16 text-center reveal-up">
+                <span class="text-brand-red font-poppins font-semibold uppercase tracking-widest text-xs sm:text-sm md:text-base mb-2 sm:mb-4 block">Get in touch</span>
                 <h2 class="text-4xl md:text-5xl lg:text-7xl text-brand-white font-bebas tracking-wide">Contact Us</h2>
             </div>
 
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-10 md:mb-16">
                 <!-- Details -->
-                <div class="space-y-8 slide-in-left">
-                    <h2 class="text-4xl font-bebas text-brand-white">Visit The Facility</h2>
-                    <p class="text-gray-400 font-inter">Ready to take the next step? Drop by for a tour or reach out to our team with any questions.</p>
+                <div class="space-y-6 sm:space-y-8 slide-in-left">
+                    <div>
+                        <span class="text-brand-red font-poppins font-semibold uppercase tracking-widest text-xs sm:text-sm mb-2 block">Direct Access</span>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bebas text-brand-white">Visit The Facility</h2>
+                        <p class="text-gray-400 font-inter text-xs sm:text-sm md:text-base mt-2 leading-relaxed">Ready to take the next step? Drop by for a tour or reach out to our team with any questions.</p>
+                    </div>
                     
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center p-2 shrink-0">
+                    <div class="space-y-3 sm:space-y-4">
+                        <!-- Location Card -->
+                        <div class="bg-brand-card/90 border border-brand-border hover:border-brand-gold/40 p-3.5 sm:p-4 rounded-2xl flex items-start sm:items-center gap-3.5 sm:gap-4 transition-colors">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center p-2 shrink-0">
                                 <img src="images/logo.png" alt="FIT 360 CLUB" class="w-full h-full object-contain">
                             </div>
-                            <div>
-                                <h4 class="font-poppins font-semibold text-white">Location</h4>
-                                <a href="https://maps.app.goo.gl/Xt5ovBCmuy7TCiLS9" target="_blank" class="text-gray-400 hover:text-brand-gold transition-colors font-inter text-sm block">
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-poppins font-semibold text-white text-xs sm:text-sm uppercase tracking-wider">Location</h4>
+                                <a href="https://maps.app.goo.gl/Xt5ovBCmuy7TCiLS9" target="_blank" class="text-gray-400 hover:text-brand-gold transition-colors font-inter text-xs sm:text-sm block leading-relaxed mt-0.5">
                                     14/MA/62-63, Indira Gandhi Nagar, Sector 14, Jagatpura, Jaipur, Rajasthan 302017
                                 </a>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center text-brand-red">
-                                <i data-lucide="phone" class="w-5 h-5"></i>
+
+                        <!-- Phone Card -->
+                        <div class="bg-brand-card/90 border border-brand-border hover:border-brand-red/40 p-3.5 sm:p-4 rounded-2xl flex items-center gap-3.5 sm:gap-4 transition-colors">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center text-brand-red shrink-0">
+                                <i data-lucide="phone" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                             </div>
-                            <div>
-                                <h4 class="font-poppins font-semibold text-white">Phone</h4>
-                                <a href="tel:09574870572" class="text-gray-400 hover:text-brand-red transition-colors font-inter text-sm block">09574870572</a>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-poppins font-semibold text-white text-xs sm:text-sm uppercase tracking-wider">Phone</h4>
+                                <a href="tel:09574870572" class="text-gray-400 hover:text-brand-red transition-colors font-inter text-xs sm:text-sm block mt-0.5 font-medium">09574870572</a>
                             </div>
+                            <a href="tel:09574870572" class="px-3 py-1.5 bg-brand-red/10 border border-brand-red/40 hover:bg-brand-red hover:text-white text-brand-red rounded-lg text-xs font-poppins font-semibold transition-all shrink-0">
+                                Call
+                            </a>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center text-brand-red">
-                                <i data-lucide="mail" class="w-5 h-5"></i>
+
+                        <!-- Email Card -->
+                        <div class="bg-brand-card/90 border border-brand-border hover:border-brand-red/40 p-3.5 sm:p-4 rounded-2xl flex items-center gap-3.5 sm:gap-4 transition-colors">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center text-brand-red shrink-0">
+                                <i data-lucide="mail" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                             </div>
-                            <div>
-                                <h4 class="font-poppins font-semibold text-white">Email</h4>
-                                <a href="mailto:info@fit360club.com" class="text-gray-400 hover:text-brand-red transition-colors font-inter text-sm block">info@fit360club.com</a>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-poppins font-semibold text-white text-xs sm:text-sm uppercase tracking-wider">Email</h4>
+                                <a href="mailto:info@fit360club.com" class="text-gray-400 hover:text-brand-red transition-colors font-inter text-xs sm:text-sm block truncate mt-0.5">info@fit360club.com</a>
                             </div>
+                            <a href="mailto:info@fit360club.com" class="px-3 py-1.5 bg-brand-dark border border-brand-border hover:border-brand-gold text-gray-300 hover:text-white rounded-lg text-xs font-poppins font-semibold transition-all shrink-0">
+                                Mail
+                            </a>
                         </div>
+                    </div>
+
+                    <!-- Direct Mobile Action Buttons -->
+                    <div class="flex gap-3 pt-1">
+                        <a href="tel:09574870572" class="flex-1 bg-brand-red hover:bg-red-600 text-white py-2.5 px-4 rounded-xl font-poppins font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-brand-red/20 transition-all">
+                            <i data-lucide="phone-call" class="w-4 h-4"></i>
+                            <span>Call Us Now</span>
+                        </a>
+                        <a href="https://wa.me/919574870572" target="_blank" class="flex-1 bg-[#25D366]/10 border border-[#25D366]/40 hover:bg-[#25D366] text-[#25D366] hover:text-white py-2.5 px-4 rounded-xl font-poppins font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>WhatsApp</span>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Form -->
-                <div class="bg-brand-card border border-brand-border p-8 rounded-3xl slide-in-right">
-                    <h3 class="text-2xl font-poppins font-bold text-white mb-6">Send a Message</h3>
-                    <form class="space-y-4" onsubmit="event.preventDefault()">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-brand-card border border-brand-border p-5 sm:p-8 rounded-2xl sm:rounded-3xl slide-in-right">
+                    <h3 class="text-xl sm:text-2xl font-poppins font-bold text-white mb-4 sm:mb-6">Send a Message</h3>
+                    <form class="space-y-3.5 sm:space-y-4" onsubmit="event.preventDefault()">
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
                             <div>
-                                <label class="block text-gray-400 font-inter text-sm mb-2">First Name</label>
-                                <input type="text" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-gold">
+                                <label class="block text-gray-400 font-inter text-xs sm:text-sm mb-1.5 sm:mb-2">First Name</label>
+                                <input type="text" placeholder="John" class="w-full bg-brand-dark border border-brand-border rounded-lg sm:rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base text-white focus:outline-none focus:border-brand-gold placeholder-gray-600">
                             </div>
                             <div>
-                                <label class="block text-gray-400 font-inter text-sm mb-2">Last Name</label>
-                                <input type="text" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-gold">
+                                <label class="block text-gray-400 font-inter text-xs sm:text-sm mb-1.5 sm:mb-2">Last Name</label>
+                                <input type="text" placeholder="Doe" class="w-full bg-brand-dark border border-brand-border rounded-lg sm:rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base text-white focus:outline-none focus:border-brand-gold placeholder-gray-600">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-gray-400 font-inter text-sm mb-2">Email</label>
-                            <input type="email" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-gold">
+                            <label class="block text-gray-400 font-inter text-xs sm:text-sm mb-1.5 sm:mb-2">Email</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-brand-dark border border-brand-border rounded-lg sm:rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base text-white focus:outline-none focus:border-brand-gold placeholder-gray-600">
                         </div>
                         <div>
-                            <label class="block text-gray-400 font-inter text-sm mb-2">Message</label>
-                            <textarea rows="4" class="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-gold"></textarea>
+                            <label class="block text-gray-400 font-inter text-xs sm:text-sm mb-1.5 sm:mb-2">Message</label>
+                            <textarea rows="3" placeholder="Tell us about your fitness goals..." class="w-full bg-brand-dark border border-brand-border rounded-lg sm:rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base text-white focus:outline-none focus:border-brand-gold placeholder-gray-600"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-brand-red hover:bg-red-600 text-white px-8 py-3 rounded-lg font-poppins font-semibold transition-colors">Send Message</button>
+                        <button type="submit" class="w-full bg-brand-red hover:bg-red-600 text-white px-6 py-3 rounded-lg sm:rounded-xl font-poppins font-semibold text-sm sm:text-base transition-colors shadow-lg shadow-brand-red/20">Send Message</button>
                     </form>
                 </div>
             </div>
 
             <!-- Map -->
-            <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-brand-border h-[420px] w-full relative reveal-up">
+            <div class="max-w-6xl mx-auto rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-border h-[260px] sm:h-[340px] md:h-[420px] w-full relative reveal-up">
                 <iframe 
                     width="100%" 
                     height="100%" 
@@ -620,9 +646,9 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
-                <div class="absolute bottom-4 right-4 z-10">
-                    <a href="https://maps.app.goo.gl/Xt5ovBCmuy7TCiLS9" target="_blank" class="bg-brand-red hover:bg-red-600 text-white px-5 py-2.5 rounded-xl font-poppins text-xs font-semibold uppercase tracking-wider flex items-center gap-2 shadow-lg transition-colors">
-                        <i data-lucide="navigation" class="w-4 h-4"></i>
+                <div class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10">
+                    <a href="https://maps.app.goo.gl/Xt5ovBCmuy7TCiLS9" target="_blank" class="bg-brand-red hover:bg-red-600 text-white px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-lg sm:rounded-xl font-poppins text-[11px] sm:text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5 sm:gap-2 shadow-lg transition-colors">
+                        <i data-lucide="navigation" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
                         <span>Get Directions</span>
                     </a>
                 </div>
@@ -631,17 +657,17 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-black border-t border-brand-border pt-12 pb-6">
-        <div class="container mx-auto px-4 md:px-8 max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+    <footer class="bg-brand-black border-t border-brand-border pt-10 sm:pt-14 pb-6">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 sm:mb-12">
             <div class="col-span-1 md:col-span-2">
-                <div class="flex items-center gap-3 mb-4 cursor-pointer">
-                    <img src="images/logo.png" alt="FIT 360 CLUB Logo" class="h-12 w-auto object-contain">
-                    <span class="font-bebas text-3xl tracking-widest text-brand-white">FIT 360 CLUB</span>
+                <div class="flex items-center gap-3 mb-3 sm:mb-4 cursor-pointer">
+                    <img src="images/logo.png" alt="FIT 360 CLUB Logo" class="h-10 sm:h-12 w-auto object-contain">
+                    <span class="font-bebas text-2xl sm:text-3xl tracking-widest text-brand-white">FIT 360 CLUB</span>
                 </div>
-                <p class="text-gray-400 font-inter max-w-sm mb-6 text-sm">
+                <p class="text-gray-400 font-inter max-w-sm mb-5 sm:mb-6 text-xs sm:text-sm leading-relaxed">
                     The ultimate standard in fitness in Jagatpura, Jaipur. World-class facilities, certified trainers, and a community built on relentless progress.
                 </p>
-                <div class="flex gap-4">
+                <div class="flex gap-3 sm:gap-4">
                     <a href="tel:09574870572" title="Call FIT 360 CLUB" class="w-10 h-10 rounded-full bg-brand-dark border border-brand-border flex items-center justify-center text-gray-400 hover:text-brand-red hover:border-brand-red transition-colors">
                         <i data-lucide="phone" class="w-4 h-4"></i>
                     </a>
@@ -658,33 +684,33 @@
             </div>
 
             <div>
-                <h4 class="font-bebas text-xl text-brand-white mb-4 tracking-wide">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#home" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Home</a></li>
-                    <li><a href="#facilities" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Programs</a></li>
-                    <li><a href="#trainers" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Trainers</a></li>
-                    <li><a href="#pricing" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Pricing</a></li>
-                    <li><a href="#tools" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Fitness Tools</a></li>
-                    <li><a href="#about" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">About Us</a></li>
-                    <li><a href="#contact" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-sm">Contact</a></li>
+                <h4 class="font-bebas text-lg sm:text-xl text-brand-white mb-3 sm:mb-4 tracking-wide">Quick Links</h4>
+                <ul class="grid grid-cols-2 md:grid-cols-1 gap-2.5 sm:gap-2">
+                    <li><a href="#home" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Home</a></li>
+                    <li><a href="#facilities" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Programs</a></li>
+                    <li><a href="#trainers" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Trainers</a></li>
+                    <li><a href="#pricing" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Pricing</a></li>
+                    <li><a href="#tools" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Fitness Tools</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-brand-white transition-colors font-inter text-xs sm:text-sm">Contact</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="font-bebas text-xl text-brand-white mb-4 tracking-wide">Newsletter</h4>
+                <h4 class="font-bebas text-lg sm:text-xl text-brand-white mb-3 sm:mb-4 tracking-wide">Newsletter</h4>
                 <p class="text-gray-400 font-inter text-xs mb-3">Subscribe for fitness tips and exclusive offers.</p>
                 <form class="flex gap-2" onsubmit="event.preventDefault()">
-                    <input type="email" placeholder="Your email" class="bg-brand-dark border border-brand-border rounded-lg px-4 py-2 text-white text-sm w-full focus:outline-none focus:border-brand-gold">
-                    <button type="submit" class="bg-brand-red text-white px-4 py-2 rounded-lg font-poppins text-sm font-semibold hover:bg-red-600 transition-colors">Join</button>
+                    <input type="email" placeholder="Your email" class="bg-brand-dark border border-brand-border rounded-lg px-3.5 py-2.5 sm:px-4 sm:py-2 text-white text-xs sm:text-sm w-full focus:outline-none focus:border-brand-gold placeholder-gray-600">
+                    <button type="submit" class="bg-brand-red text-white px-4 py-2.5 sm:py-2 rounded-lg font-poppins text-xs sm:text-sm font-semibold shrink-0 hover:bg-red-600 transition-colors">Join</button>
                 </form>
             </div>
         </div>
         
-        <div class="container mx-auto px-4 md:px-8 max-w-7xl border-t border-brand-border/50 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-gray-500 font-inter text-xs mb-4 md:mb-0">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl border-t border-brand-border/50 pt-5 sm:pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <p class="text-gray-500 font-inter text-xs">
                 © 2026 FIT 360 CLUB. All rights reserved.
             </p>
-            <div class="flex gap-6">
+            <div class="flex gap-4 sm:gap-6">
                 <a href="#" class="text-gray-500 hover:text-white font-inter text-xs transition-colors">Privacy Policy</a>
                 <a href="#" class="text-gray-500 hover:text-white font-inter text-xs transition-colors">Terms of Service</a>
             </div>
