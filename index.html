@@ -537,8 +537,8 @@
                     
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center text-brand-red">
-                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            <div class="w-12 h-12 bg-brand-dark border border-brand-border rounded-xl flex items-center justify-center p-2 shrink-0">
+                                <img src="images/logo.png" alt="FIT 360 CLUB" class="w-full h-full object-contain">
                             </div>
                             <div>
                                 <h4 class="font-poppins font-semibold text-white">Location</h4>
@@ -596,17 +596,38 @@
             </div>
 
             <!-- Map -->
-            <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-brand-border h-[400px] w-full relative reveal-up">
+            <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-brand-border h-[420px] w-full relative reveal-up group">
                 <iframe 
                     width="100%" 
                     height="100%" 
                     title="FIT 360 CLUB Location Map"
                     src="https://maps.google.com/maps?q=14%2FMA%2F62-63%2C%20Indira%20Gandhi%20Nagar%2C%20Sector%2014%2C%20Jagatpura%2C%20Jaipur%2C%20Rajasthan%20302017&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                    class="border-0 grayscale contrast-125 opacity-90"
+                    class="border-0 grayscale contrast-125 opacity-90 w-full h-full"
                     allowfullscreen
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+
+                <!-- Custom Real Logo Pin Over Generic Grey Pin -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[calc(50%+10px)] pointer-events-none z-20 flex flex-col items-center">
+                    <div class="relative flex items-center justify-center">
+                        <!-- Glowing Pulse -->
+                        <span class="animate-ping absolute inline-flex h-16 w-16 rounded-full bg-brand-red opacity-60"></span>
+                        
+                        <!-- Real Logo Badge Pin -->
+                        <div class="relative w-14 h-14 rounded-full bg-brand-black border-2 border-brand-red p-1.5 shadow-[0_0_25px_rgba(255,51,51,0.9)] flex items-center justify-center">
+                            <img src="images/logo.png" alt="FIT 360 CLUB Logo" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                    <!-- Pointer Triangle -->
+                    <div class="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[10px] border-t-brand-red -mt-0.5"></div>
+                    <!-- Floating Badge -->
+                    <div class="mt-1 bg-brand-black/95 border border-brand-border px-3.5 py-1 rounded-full text-xs font-poppins font-bold text-brand-white shadow-xl flex items-center gap-1.5 whitespace-nowrap">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        <span>FIT 360 CLUB</span>
+                    </div>
+                </div>
+
                 <div class="absolute bottom-4 right-4 z-10">
                     <a href="https://maps.app.goo.gl/ejzB6LpS6dwKcyMBA" target="_blank" class="bg-brand-red hover:bg-red-600 text-white px-5 py-2.5 rounded-xl font-poppins text-xs font-semibold uppercase tracking-wider flex items-center gap-2 shadow-lg transition-colors">
                         <i data-lucide="navigation" class="w-4 h-4"></i>
