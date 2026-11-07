@@ -86,6 +86,28 @@ html {
     transform: translate(0, 0) rotate(0deg);
 }
 
+/* Parallelogram Trainer Cards */
+.parallelogram-card {
+    clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+.parallelogram-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 15px 30px rgba(255, 51, 51, 0.45));
+}
+.parallelogram-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffd166, #ff3333);
+    z-index: 25;
+}
+
 /* Stagger delays for cards */
 .card-swoop-1 { transition-delay: 0.1s; }
 .card-swoop-2 { transition-delay: 0.2s; }
