@@ -1,4 +1,4 @@
-# FIT360CLUB (Prime Fitness)
+# FIT 360 CLUB
 
 A modern, high-performance, dark-themed fitness club landing page featuring responsive design, interactive transformation comparison slider, fitness calculators (BMI & Daily Calorie needs), and smooth scroll animations.
 

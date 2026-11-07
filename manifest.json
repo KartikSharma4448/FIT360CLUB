@@ -1,7 +1,7 @@
 {
-  "name": "Prime Fitness | FIT360CLUB",
-  "short_name": "PrimeFitness",
-  "description": "Dominate your limits with elite training programs, master coaches, and world-class equipment.",
+  "name": "FIT 360 CLUB - Jaipur",
+  "short_name": "FIT360CLUB",
+  "description": "FIT 360 CLUB - Dominate your limits with elite training programs, certified trainers, and world-class equipment in Jagatpura, Jaipur.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
@@ -15,4 +15,3 @@
     }
   ]
 }
-
