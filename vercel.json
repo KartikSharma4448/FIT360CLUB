@@ -38,7 +38,7 @@
       ]
     },
     {
-      "source": "/(favicon.svg|favicon.png)",
+      "source": "/(favicon.*|apple-touch-icon.png|android-chrome-.*.png)",
       "headers": [
         {
           "key": "Cache-Control",
