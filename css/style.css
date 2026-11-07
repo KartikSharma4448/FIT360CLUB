@@ -85,6 +85,15 @@ html {
     opacity: 1;
     transform: translate(0, 0) rotate(0deg);
 }
+@media (max-width: 767px) {
+    [class^="card-swoop-"] {
+        transform: translateY(25px);
+        transition: all 0.6s ease;
+    }
+    [class^="card-swoop-"].active {
+        transform: translateY(0);
+    }
+}
 
 /* Parallelogram Trainer Cards */
 .parallelogram-card {

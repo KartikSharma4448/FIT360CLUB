@@ -325,12 +325,12 @@
                 <h2 class="text-4xl md:text-5xl lg:text-7xl text-brand-white font-bebas tracking-wide">Elite Trainers</h2>
             </div>
 
-            <!-- Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal-up">
+            <!-- Cards (Side-by-side on mobile with horizontal snap scroll) -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-4 -mx-4 md:mx-auto md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 reveal-up no-scrollbar">
                 
                 <!-- Trainer 1 -->
-                <div class="card-swoop-1">
-                    <div class="parallelogram-card group relative h-[460px] cursor-pointer bg-brand-card">
+                <div class="card-swoop-1 shrink-0 w-[74vw] sm:w-[48vw] max-w-[300px] md:w-auto snap-center">
+                    <div class="parallelogram-card group relative h-[420px] sm:h-[440px] md:h-[460px] cursor-pointer bg-brand-card">
                         <img src="images/Alex%20Vance.avif" alt="Alex Vance" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-0 md:grayscale md:group-hover:grayscale-0" loading="lazy" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-70"></div>
                         <div class="absolute bottom-0 left-0 w-full p-6 pl-8 pr-8 translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -340,8 +340,8 @@
                     </div>
                 </div>
                 <!-- Trainer 2 -->
-                <div class="card-swoop-2">
-                    <div class="parallelogram-card group relative h-[460px] cursor-pointer bg-brand-card">
+                <div class="card-swoop-2 shrink-0 w-[74vw] sm:w-[48vw] max-w-[300px] md:w-auto snap-center">
+                    <div class="parallelogram-card group relative h-[420px] sm:h-[440px] md:h-[460px] cursor-pointer bg-brand-card">
                         <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=75&w=600&auto=format&fit=crop" alt="Sarah Chen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-0 md:grayscale md:group-hover:grayscale-0" loading="lazy" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-70"></div>
                         <div class="absolute bottom-0 left-0 w-full p-6 pl-8 pr-8 translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -351,8 +351,8 @@
                     </div>
                 </div>
                 <!-- Trainer 3 -->
-                <div class="card-swoop-3">
-                    <div class="parallelogram-card group relative h-[460px] cursor-pointer bg-brand-card">
+                <div class="card-swoop-3 shrink-0 w-[74vw] sm:w-[48vw] max-w-[300px] md:w-auto snap-center">
+                    <div class="parallelogram-card group relative h-[420px] sm:h-[440px] md:h-[460px] cursor-pointer bg-brand-card">
                         <img src="images/Marcus%20Cole.avif" alt="Marcus Cole" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-0 md:grayscale md:group-hover:grayscale-0" loading="lazy" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-70"></div>
                         <div class="absolute bottom-0 left-0 w-full p-6 pl-8 pr-8 translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -362,8 +362,8 @@
                     </div>
                 </div>
                 <!-- Trainer 4 -->
-                <div class="card-swoop-4">
-                    <div class="parallelogram-card group relative h-[460px] cursor-pointer bg-brand-card">
+                <div class="card-swoop-4 shrink-0 w-[74vw] sm:w-[48vw] max-w-[300px] md:w-auto snap-center">
+                    <div class="parallelogram-card group relative h-[420px] sm:h-[440px] md:h-[460px] cursor-pointer bg-brand-card">
                         <img src="images/Elena%20Rostova.avif" alt="Elena Rostova" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-0 md:grayscale md:group-hover:grayscale-0" loading="lazy" decoding="async">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent transition-opacity duration-500 opacity-90 group-hover:opacity-70"></div>
                         <div class="absolute bottom-0 left-0 w-full p-6 pl-8 pr-8 translate-y-0 md:translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -372,6 +372,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile Swipe Hint -->
+            <div class="text-center text-gray-500 font-inter text-xs mt-4 md:hidden flex items-center justify-center gap-1.5">
+                <i data-lucide="arrow-left-right" class="w-3.5 h-3.5 text-brand-red"></i> Swipe to see all trainers
             </div>
         </div>
     </section>
