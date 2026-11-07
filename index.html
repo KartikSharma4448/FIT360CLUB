@@ -22,7 +22,9 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
 
     <!-- Favicon & Web App Manifest -->
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="manifest" href="manifest.json">
     
     <!-- Google Fonts -->
@@ -201,12 +203,12 @@
 
             <div class="max-w-4xl mx-auto relative rounded-3xl overflow-hidden aspect-video border border-brand-border reveal-up" id="slider-container" style="transition-delay: 0.2s;">
                 <!-- After Image (Background) -->
-                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/after.png');">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/after.jpg');">
                     <div class="absolute top-4 right-4 bg-brand-red text-white px-4 py-1 font-bebas text-2xl tracking-widest rounded-md shadow-xl z-20">AFTER</div>
                 </div>
                 
                 <!-- Before Image (Foreground, clipped) -->
-                <div id="before-image" class="absolute inset-0 bg-cover bg-center border-r-[4px] border-brand-gold z-10" style="background-image: url('images/before.png'); clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                <div id="before-image" class="absolute inset-0 bg-cover bg-center border-r-[4px] border-brand-gold z-10" style="background-image: url('images/before.jpg'); clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
                     <div class="absolute top-4 left-4 bg-brand-dark text-white px-4 py-1 font-bebas text-2xl tracking-widest rounded-md shadow-xl">BEFORE</div>
                 </div>
 
